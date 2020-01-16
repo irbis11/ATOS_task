@@ -17,35 +17,37 @@ public class Book {
         this.title = title;
         this.ID = counter;
         this.isLent = false;
+        this.lenderName = "";
     }
 
     @Override
     public String toString() {
-        return "Book{" + "title='" + title + '\'' + ", year=" + year + ", author='" + author + '\'' + ", isLent=" + isLent + ", lenderName='" + lenderName + '\'' + '}';
+        return "Book{" + "title='" + this.title + '\'' + ", year=" + this.year + ", author='" + this.author + '\''
+                + ", isLent=" + this.isLent + ", lenderName='" + this.lenderName + '\'' + '}';
     }
 
     public String getTitle() {
-        return title;
+        return this.title;
     }
 
     public int getYear() {
-        return year;
+        return this.year;
     }
 
     public String getAuthor() {
-        return author;
+        return this.author;
     }
 
     public int getID() {
-        return ID;
+        return this.ID;
     }
 
     public String getLenderName() {
-        return lenderName;
+        return this.lenderName;
     }
 
     public boolean isLent() {
-        return isLent;
+        return this.isLent;
     }
 
     public void lentBook(String name) {
