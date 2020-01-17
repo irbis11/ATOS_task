@@ -6,7 +6,7 @@ public class Book {
     private int year;
     private String author;
     private int ID;
-    private static int counter;
+    private static int counter = 0;
     private boolean isLent;
     private String lenderName;
 
